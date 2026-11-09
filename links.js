@@ -34,5 +34,11 @@ window.TABKAT = {
       description: "Like Wordle, but every answer is a nickname for Cole Smith.",
       preview: "previews/cs2wordle.webp",
     },
+    {
+      name: "BykatAI",
+      url: "https://willbykat3.github.io/BykatAI/",
+      description: "An AI chat app with saved chats and file uploads.",
+      preview: "previews/bykatai.webp",
+    },
   ],
 };

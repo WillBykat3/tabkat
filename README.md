@@ -1,6 +1,6 @@
 # Tabkat
 
-One page with all my websites, each shown with a screenshot preview. Tap a card to open the site, or use **Live preview** to load the real site in a window without leaving the page.
+One page with all my websites, each shown with a screenshot preview. Tap a card to open the site.
 
 ## Edit the links
 

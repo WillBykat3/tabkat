@@ -104,63 +104,15 @@ body {
 .desc { margin: 4px 0 10px; color: var(--muted); font-size: 14px; }
 .host {
   display: block;
-  margin-top: auto; /* keep the address on the bottom row, level with the button */
-  padding-right: 112px; /* room for the Live preview button */
+  margin-top: auto; /* keep the address on the bottom row of every card */
   font-size: 12.5px; color: var(--muted); opacity: 0.85;
   word-break: break-all;
 }
 .host::after { content: " ↗"; }
 
-.peek-btn {
-  position: absolute; right: 14px; bottom: 13px;
-  font: 500 12.5px/1 Inter, system-ui, sans-serif;
-  padding: 8px 12px;
-  border: 1px solid var(--line); border-radius: 999px;
-  background: var(--card);
-  color: var(--text);
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-.peek-btn:hover { background: var(--line); }
-.peek-btn:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
-
 .foot { text-align: center; margin-top: 48px; font-size: 14px; }
 .foot a { color: var(--muted); text-decoration: none; }
 .foot a:hover { color: var(--text); }
-
-/* Live preview dialog */
-dialog {
-  width: min(1100px, calc(100vw - 32px));
-  height: min(760px, calc(100dvh - 32px));
-  padding: 0;
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background: var(--card);
-  color: var(--text);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
-  overflow: hidden;
-}
-dialog[open] { display: flex; flex-direction: column; }
-dialog::backdrop { background: rgba(0, 0, 0, 0.45); backdrop-filter: blur(3px); }
-.peek-bar {
-  display: flex; align-items: center; gap: 8px;
-  padding: 10px 10px 10px 18px;
-  border-bottom: 1px solid var(--line);
-}
-.peek-title { flex: 1; font-weight: 600; font-size: 15px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.btn {
-  font: 500 13px/1 Inter, system-ui, sans-serif;
-  padding: 9px 12px;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  background: transparent;
-  color: var(--text);
-  text-decoration: none;
-  cursor: pointer;
-}
-.btn:hover { background: var(--line); }
-.btn.icon { padding: 9px 11px; }
-dialog iframe { flex: 1; width: 100%; border: 0; background: #fff; }
 
 @keyframes rise {
   from { opacity: 0; transform: translateY(8px); }
