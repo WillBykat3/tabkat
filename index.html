@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabkat</title>
+  <meta name="description" content="All of Willbykat's websites in one place.">
+  <meta name="theme-color" content="#f6f5f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="profile">
+      <div class="avatar" aria-hidden="true" id="avatar"></div>
+      <h1 id="name"></h1>
+      <p class="tagline" id="tagline"></p>
+    </header>
+
+    <ul class="grid" id="sites"></ul>
+
+    <footer class="foot">
+      <a id="github" href="#" target="_blank" rel="noopener">GitHub</a>
+    </footer>
+  </main>
+
+  <dialog id="peek" aria-labelledby="peek-title">
+    <div class="peek-bar">
+      <span class="peek-title" id="peek-title"></span>
+      <a class="btn" id="peek-open" href="#" target="_blank" rel="noopener">Open site ↗</a>
+      <button class="btn icon" id="peek-close" aria-label="Close preview">✕</button>
+    </div>
+    <iframe id="peek-frame" title="Live preview" loading="lazy" referrerpolicy="no-referrer"></iframe>
+  </dialog>
+
+  <script src="links.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
