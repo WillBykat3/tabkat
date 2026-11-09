@@ -3,7 +3,8 @@
   const $ = (id) => document.getElementById(id);
 
   $("name").textContent = data.name;
-  $("tagline").textContent = data.tagline;
+  if (data.tagline) $("tagline").textContent = data.tagline;
+  else $("tagline").remove();
   $("avatar").textContent = data.name.charAt(0).toUpperCase();
   $("github").href = data.github;
   document.title = data.name + " · Tabkat";

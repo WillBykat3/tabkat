@@ -1,8 +1,7 @@
 // Edit this file to change what shows on the page.
 // Each site needs a name, url and description. `preview` is an image in /previews.
 window.TABKAT = {
-  name: "Willbykat",
-  tagline: "Things I've built. Tap one to open it.",
+  name: "WEB",
   github: "https://github.com/WillBykat3",
   sites: [
     {
@@ -26,20 +25,14 @@ window.TABKAT = {
     {
       name: "Course Chart Drill",
       url: "https://willbykat3.github.io/chartkat/",
-      description: "Fill in the APUSH and AP World course charts from memory, row by row.",
+      description: "Fill in any chart from memory.",
       preview: "previews/chartkat.webp",
     },
     {
       name: "CS2Wordle",
       url: "https://willbykat3.github.io/cs2wordle/",
-      description: "A daily Wordle-style game where every answer starts with CS2.",
+      description: "Like Wordle, but every answer is a nickname for Cole Smith.",
       preview: "previews/cs2wordle.webp",
-    },
-    {
-      name: "HollierAI",
-      url: "https://willbykat3.github.io/HollierAI/",
-      description: "A prank chatbot for friends. Ask it anything.",
-      preview: "previews/hollierai.webp",
     },
   ],
 };

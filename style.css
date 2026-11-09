@@ -64,6 +64,8 @@ body {
 }
 @media (min-width: 720px) {
   .grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+  /* Odd number of sites: center the last card instead of leaving it on the left. */
+  .card:last-child:nth-child(odd) { grid-column: 1 / -1; justify-self: center; width: calc(50% - 12px); }
 }
 
 .card {
@@ -79,7 +81,8 @@ body {
 }
 .card:hover { transform: translateY(-3px); box-shadow: var(--shadow-hover); }
 
-.card-link { display: block; color: inherit; text-decoration: none; }
+.card { display: flex; flex-direction: column; }
+.card-link { flex: 1; display: flex; flex-direction: column; color: inherit; text-decoration: none; }
 .card-link:focus-visible { outline: 2px solid var(--text); outline-offset: -2px; border-radius: var(--radius); }
 
 .shot {
@@ -96,11 +99,12 @@ body {
 }
 .card:hover .shot img { transform: scale(1.03); }
 
-.meta { padding: 16px 18px 18px; }
+.meta { flex: 1; display: flex; flex-direction: column; padding: 16px 18px 18px; }
 .meta h2 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -0.01em; }
 .desc { margin: 4px 0 10px; color: var(--muted); font-size: 14px; }
 .host {
   display: block;
+  margin-top: auto; /* keep the address on the bottom row, level with the button */
   padding-right: 112px; /* room for the Live preview button */
   font-size: 12.5px; color: var(--muted); opacity: 0.85;
   word-break: break-all;
